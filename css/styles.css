@@ -129,3 +129,47 @@
   font-size: 16px;
   align-items: stretch;
 }
+
+.informacoes {
+  max-width: 1300px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;  
+}
+
+.informacoes {
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.informacoes-item {
+  grid-template-columns: 1fr 1fr;
+}
+
+.informacoes-item h3 {
+  font-size: 18px;
+}
+
+.informacoes-titulo {
+  font-size: 28px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.informacoes-paragrafo {
+  font-size: 14px;
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+.informacoes-lista-item {
+  font-size: 14px;
+  color: #525252;
+}
+
+.informacoes-foto {
+  max-width: 700px;
+}
