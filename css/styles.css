@@ -1,5 +1,6 @@
 @import 'reset.css';
 
+
 .header-nav {
   max-width: 1300px;
   padding: 30px 20px;
@@ -43,6 +44,7 @@
   position: relative;
   max-width: 14ch;
 }
+
 
 .introducao-frase {
   font-size: 16px;
@@ -99,6 +101,62 @@
   background: #0b5ed7;
   border-color: #0a58ca;
 }
+
+
+@media (max-width: 1050px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+
+  .introducao-frase {
+    font-size: 14px;
+    color: #525252;
+  }
+
+  .form input {
+    width: 240px;
+    padding: 0.275rem 0.75rem;
+    font-size: 1rem;    
+  }
+
+  .introducao button {
+    padding: 0.250rem;
+  }
+
+  .header-nav img {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;  
+    margin-bottom: 20px;
+  }
+
+  .introducao h1 {
+    width: 100%;
+  }
+
+  
+  .introducao-img {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .features {
   max-width: 1300px;
@@ -233,3 +291,5 @@
   padding: 50px;
   
 }
+
+@import 'media.css';
