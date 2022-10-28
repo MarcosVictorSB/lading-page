@@ -134,14 +134,23 @@
     grid-template-columns: 1fr;
     align-items: center;  
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .introducao h1 {
-    width: 100%;
+    text-align: center;
+    max-width: 50ch;
   }
 
+  .introducao-frase {
+    max-width: 100%;
+  }
+
+  .introducao .form input {
+    width: 400px;
+  }
   
-  .introducao-img {
+  .introducao-div-img {
     display: none;
   }
 }
@@ -183,15 +192,32 @@
 
 .features-item {
   max-width: 300px;
+  border: 1px solid #000;
 }
 
 .features-item h3 {
   font-size: 18px;
+  text-align: center;
 }
 
 .features-item p {
   font-size: 16px;
   align-items: stretch;
+  text-align: justify;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 1050px) {
+  .features-listas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .features-listas {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .informacoes {
@@ -219,7 +245,7 @@
 
 .informacoes-titulo {
   font-size: 28px;
-  max-width: 500px;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
@@ -237,6 +263,32 @@
 .informacoes-foto {
   max-width: 700px;
 }
+
+@media (max-width: 1050px) {
+  .informacoes {
+    grid-template-columns: 1fr;
+  }
+
+  .informacoes-titulo h3{
+    width: 100%;
+  }
+
+  .informacoes-foto {
+    max-width: 100%;
+  }
+
+  .img-dashboard {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .informacoes-foto {
+    display: none;
+  }
+}
+
+
 
 .inscreva {
   max-width: 1300px;
@@ -277,6 +329,43 @@
   color: #141414;
 }
 
+@media (max-width: 800px) {
+
+  .inscreva {
+    grid-template-columns: 1fr;    
+  }
+
+  .inscreva-foto {
+    display: none;
+  }
+
+  br {
+    display: none;
+  }
+
+  .inscreva h3 {
+    display: block;
+    width: 50ch;
+    text-align: center;
+    margin-left: 75px;
+  }
+
+  .inscreva form {
+    text-align: center;    
+  }
+
+  .inscreva form input {
+    width: 400px;
+  }
+
+  .frase-promessa {
+    margin-left: 80px;
+    text-align: center;
+    max-width: 75ch;
+  }
+}
+
+
 .footer {
   margin-top: 50px;
   background: #E1E6EF;
@@ -291,5 +380,3 @@
   padding: 50px;
   
 }
-
-@import 'media.css';
