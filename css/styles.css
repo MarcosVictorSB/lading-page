@@ -212,14 +212,13 @@
 
 .features-listas {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   list-style: none;
   margin-top: 50px;
 }
 
 .features-item {
-  max-width: 300px;
   background-color: #fcfcfc;
   box-shadow: 3px 3px #ecedee;
   gap: 20px;
@@ -242,13 +241,13 @@
 
 @media (max-width: 1050px) {
   .features-listas {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 800px) {
   .features-listas {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
