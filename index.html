@@ -56,13 +56,27 @@
           inovação.
         </p>
 
-        <form action="" class="form">
+        <form
+          id="sheetdb-form"
+          action="https://sheetdb.io/api/v1/hpn21ub6ggjju"
+          class="form"
+          method="post"
+        >
           <input
             type="email"
+            name="data[email]"
             placeholder="Insira o seu email empresarial"
             required
+            id="sheetdb-form-input"
           />
-          <button>Enviar</button>
+
+          <input
+            type="hidden"
+            name="data[date]"
+            id="sheetdb-form-input-date"
+            value=""
+          />
+          <button class="sheetdb-form-btn">Enviar</button>
         </form>
         <span class="introducao-frase-promessa">
           <strong>346</strong>
@@ -202,13 +216,26 @@
           <br />
           Faça isso agora!
         </h3>
-        <form action="" class="form">
+        <form
+          id="sheetdb-form-2"
+          action="https://sheetdb.io/api/v1/hpn21ub6ggjju"
+          class="form"
+          method="post"
+        >
           <input
             type="email"
             placeholder="Insira o seu email empresarial"
             required
+            name="data[email]"
+            id="sheetdb-form-input-second"
           />
-          <button>Enviar</button>
+          <input
+            type="hidden"
+            name="data[date]"
+            id="sheetdb-form-input-date-second"
+            value=""
+          />
+          <button class="sheetdb-form-btn-second">Enviar</button>
         </form>
         <p class="frase-promessa">
           Faca como outros<strong> 346</strong> empreendedores que já se
@@ -221,5 +248,6 @@
     <footer class="footer">
       <p>2022 ® Inc. Todos os direitos reservados.</p>
     </footer>
+    <script src="./js/api.js"></script>
   </body>
 </html>
