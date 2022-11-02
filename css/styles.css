@@ -211,6 +211,10 @@ html{
   text-transform: uppercase;
 }
 
+.span-gunno-nav {
+  color: #0b5ed7;
+}
+
 .span-bold{
   color: rgb(29, 28, 28);
   font-weight: bolder;
