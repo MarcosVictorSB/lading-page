@@ -1,5 +1,16 @@
 @import 'reset.css';
 
+@media (max-width: 800px) {
+  .logo-menu{
+    display: none;
+  }
+
+  .header-menu {
+    padding: 0px;
+  }
+}
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -420,9 +431,9 @@ html{
     margin-top: 50px;
   }
 
-  .noticia-list {
+  .call-to-action-list, .noticia-list {
     display: flex;
-    justify-content: space-between;
+    padding: 0;
   }
 
   .noticia-item {
@@ -437,6 +448,7 @@ html{
 
   .call-to-action-list, .noticia-list {
     display: grid;
+    padding: 0;
   }
 }
 
@@ -501,7 +513,6 @@ html{
   .inscreva h3 {
     display: block;
     text-align: center;
-    margin-left: 75px;
   }
 
   .inscreva form {   
