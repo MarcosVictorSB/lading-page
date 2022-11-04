@@ -22,7 +22,7 @@ function fetchSheetDB() {
 }
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  e.p0
   changeContentBtn('Enviando ...')
   inputDate.value = new Date();
   setTimeout(function () {
@@ -42,15 +42,15 @@ const btnSecond = document.querySelector('.sheetdb-form-btn-second')
 const inputSecond = document.querySelector('#sheetdb-form-input-second')
 const inputDateSecond = document.querySelector('#sheetdb-form-input-date-second');
 
-function changeContentBtn(value) {
+function changeContentBtnSecond(value) {
   btnSecond.textContent = value;
 }
 
-function clearInput() {
+function clearInputSecond() {
   inputSecond.value = "";
 }
 
-function fetchSheetDB() {
+function fetchSheetDBSecond() {
   fetch(formSecond.action, {
     method: 'POST',
     body: new FormData(document.getElementById('sheetdb-form-2'))
@@ -59,11 +59,11 @@ function fetchSheetDB() {
 
 formSecond.addEventListener("submit", function (e) {
   e.preventDefault();
-  changeContentBtn('Enviando ...')
+  changeContentBtnSecond('Enviando ...')
   inputDateSecond.value = new Date();
   setTimeout(function () {
-    fetchSheetDB()
-    changeContentBtn('Enviar')
-    clearInput();
+    fetchSheetDBSecond()
+    changeContentBtnSecond('Enviar')
+    clearInputSecond();
   }, 2000);
 })
