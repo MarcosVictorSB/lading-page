@@ -62,8 +62,9 @@ formSecond.addEventListener("submit", function (e) {
   changeContentBtnSecond('Enviando ...')
   inputDateSecond.value = new Date();
   setTimeout(function () {
-    fetchSheetDBSecond()
+    fetchSheetDBSecond();
     changeContentBtnSecond('Enviar')
     clearInputSecond();
   }, 2000);
-})
+
+});
