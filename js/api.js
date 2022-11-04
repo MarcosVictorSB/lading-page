@@ -22,7 +22,7 @@ function fetchSheetDB() {
 }
 
 form.addEventListener("submit", function (e) {
-  e.p0
+  e.preventDefault();
   changeContentBtn('Enviando ...')
   inputDate.value = new Date();
   setTimeout(function () {
